@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: cwp-poc-app 
-          image: cwppoccontainerregistry.azurecr.io/sampleapp
+          image: cwppoccontainerregistry.azurecr.io/cwp-poc-app
           ports:
           - containerPort: 80
