@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: sampleapp 
+  name: cwp-poc-app 
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: sampleapp
+      app: cwp-poc-app
   template:
     metadata:
       labels:
-        app: sampleapp 
+        app: cwp-poc-app 
     spec:
       containers:
-        - name: sampleapp 
+        - name: cwp-poc-app 
           image: cwppoccontainerregistry.azurecr.io/sampleapp
           ports:
           - containerPort: 80
