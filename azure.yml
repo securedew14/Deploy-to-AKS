@@ -18,7 +18,7 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: Docker@2
-      displayName: Build an Image
+      displayName: Build a container Image
       inputs:
         containerRegistry: 'cwppocContainerRegistry'
         repository: '$(imageRepo)'
